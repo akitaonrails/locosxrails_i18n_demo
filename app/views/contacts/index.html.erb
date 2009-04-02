@@ -4,15 +4,19 @@
 	<tr>
 	  <th><%= t("contacts.index.name") %></th>
 	  <th><%= t("index.email", :scope => "contacts") %></th>
+	  <!--
 	  <th><%= t("phone", :scope => "contacts.index") %></th>
 	  <th><%= t(".mobile") %></th>
+    -->
 	</tr>
   <% for contact in @contacts %>
     <tr>
       <td><%=h contact.name %></td>
       <td><%=h contact.email %></td>
+      <!--
       <td><%=h contact.phone %></td>
       <td><%=h contact.mobile %></td>
+      -->
       <td><%= link_to t("common.show"), contact %></td>
       <td><%= link_to t("common.edit"), edit_contact_path(contact) %></td>
       <td><%= link_to t("common.destroy"), contact, :confirm => t('common.destroy_confirm'), :method => :delete %></td>

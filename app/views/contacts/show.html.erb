@@ -16,6 +16,10 @@
   <strong><%= Contact.human_attribute_name('mobile') %>:</strong>
   <%=h @contact.mobile %>
 </p>
+<p>
+  <strong><%= Contact.human_attribute_name('description') %>:</strong>
+  <%=h @contact.description %>
+</p>
 
 <p>
   <%= link_to t("common.edit"), edit_contact_path(@contact) %> |

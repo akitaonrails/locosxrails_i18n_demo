@@ -46,7 +46,8 @@
           :name => "Nome",
           :email => "Email",
           :phone => "Telefone",
-          :mobile => "Celular"        
+          :mobile => "Celular",
+          :description => "Descrição"
         }
       }
     }
