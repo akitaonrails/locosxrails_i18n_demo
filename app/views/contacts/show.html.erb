@@ -1,0 +1,24 @@
+<% title t(".title") %>
+
+<p>
+  <strong><%= Contact.human_attribute_name('name') %>:</strong>
+  <%=h @contact.name %>
+</p>
+<p>
+  <strong><%= Contact.human_attribute_name('email') %>:</strong>
+  <%=h @contact.email %>
+</p>
+<p>
+  <strong><%= Contact.human_attribute_name('phone') %>:</strong>
+  <%=h @contact.phone %>
+</p>
+<p>
+  <strong><%= Contact.human_attribute_name('mobile') %>:</strong>
+  <%=h @contact.mobile %>
+</p>
+
+<p>
+  <%= link_to t("common.edit"), edit_contact_path(@contact) %> |
+  <%= link_to t("common.destroy"), @contact, :confirm => t("destroy_confirm"), :method => :delete %> |
+  <%= link_to t("common.view_all"), contacts_path %>
+</p>

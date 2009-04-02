@@ -1,0 +1,30 @@
+en:
+  hello: "Hello world"
+
+  common:
+    show: Show
+    edit: Edit
+    destroy: Destroy
+    destroy_confirm: Are you sure?
+    back: Back to List
+    submit: Submit
+    view_all: View All
+  
+  contacts:
+    index: 
+      title: Contacts
+      name: Name
+      email: Email
+      phone: Phone
+      mobile: Mobile
+      new: New Contact
+    new:
+      title: New Contact
+    edit:
+      title: Edit Contact
+    show:
+      title: Contact
+    messages:
+      successful_create: Successfully created contact.
+      successful_update: Successfully updated contact.
+      successful_destroy: Successfully destroyed contact.

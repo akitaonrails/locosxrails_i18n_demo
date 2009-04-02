@@ -1,0 +1,8 @@
+<% title t(".title") %>
+
+<%= render :partial => 'form' %>
+
+<p>
+  <%= link_to t("common.show"), @contact %> |
+  <%= link_to t("common.view_all"), contacts_path %>
+</p>
