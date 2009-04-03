@@ -13,6 +13,8 @@ class ApplicationController < ActionController::Base
   private
   
   def set_locale
+    # comment the next line to disable http_accept_language recognition
+    params[:locale] = request.compatible_language_from(I18n.available_locales) unless params[:locale]
     I18n.locale = params[:locale] if params[:locale]
   end
 end
